@@ -84,7 +84,7 @@ public class BallMovement extends Thread {
         int hitPosition = ballLocation.y - paddleBounds.y;
         if (hitPosition < 3 * paddleBounds.height / 5) {
             ballDy = 5;
-        } else if (hitPosition > 3 * paddleBounds.height / 3) {
+        } else if (hitPosition > 3 * paddleBounds.height / 5) {
             ballDy = -5;
         } else {
             ballDy = 0;
